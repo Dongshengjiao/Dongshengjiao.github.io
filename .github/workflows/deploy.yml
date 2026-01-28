@@ -1,0 +1,37 @@
+name: Hexo Auto Deploy
+
+on:
+  push:
+    branches:
+      - source  # <--- 修改点1：监听 source 分支的变动，而不是 main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Build Hexo
+        run: npx hexo generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # ▼▼▼ 修改点2：如果是 username.github.io 仓库，这里要发布到 main
+          # 如果是普通项目仓库，这里通常是 gh-pages
+          publish_branch: main  
+          commit_message: ${{ github.event.head_commit.message }}

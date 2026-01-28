@@ -1,0 +1,23 @@
+# _config.next.yml
+
+# Scheme: Muse
+# scheme: Muse    # 默认，极简，侧边栏隐藏
+# scheme: Mist    # 紧凑，侧边栏隐藏
+#scheme: Pisces  # 双栏，侧边栏固定在左侧 (很适合技术博主)
+scheme: Gemini  # 类似 Pisces，但有卡片阴影效果 (更现代)
+
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  about: /about/ || fa fa-user
+
+avatar:
+  url: /images/avatar.png # 把你的头像放进 source/images/ 文件夹
+  rounded: true           # 圆形头像
+  rotated: false         # 鼠标悬停旋转效果
+
+social:
+  GitHub: https://github.com/Dongshengjiao || fab fa-github
+  E-Mail: mailto:3064669642@qq.com || fa fa-envelope

@@ -2904,3 +2904,128 @@ header.header {
     padding: 10px 12px;
   }
 }
+
+/* --- Custom Tech Style (Homepage) --- */
+:root {
+  --body-bg-color: #050913;
+  --content-bg-color: #0c1324;
+  --card-bg-color: #101a30;
+  --text-color: #c9d7ff;
+  --link-color: #7fd1ff;
+  --link-hover-color: #b9f1ff;
+  --theme-color: #090d1a;
+}
+
+.headband {
+  background: linear-gradient(90deg, #00e5ff 0%, #7b61ff 55%, #6effc0 100%);
+  height: 3px;
+}
+
+.site-brand-container {
+  background: radial-gradient(circle at 20% 10%, #132347 0%, #090d1a 60%, #070a14 100%);
+}
+
+.main-inner .post-block,
+.main-inner .tabs-comment,
+.main-inner > .comments,
+.main-inner .pagination,
+.sidebar-inner {
+  border: 1px solid rgba(127, 209, 255, 0.12);
+  box-shadow: 0 14px 36px rgba(2, 6, 24, 0.45);
+}
+
+.site-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tech-hero {
+  background: linear-gradient(140deg, rgba(127, 209, 255, 0.12), rgba(123, 97, 255, 0.09));
+  border: 1px solid rgba(127, 209, 255, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgba(2, 8, 25, 0.55);
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 28px 28px 24px;
+  position: relative;
+}
+
+.tech-hero-grid {
+  background-image: linear-gradient(rgba(127, 209, 255, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(127, 209, 255, 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+  inset: 0;
+  opacity: 0.3;
+  pointer-events: none;
+  position: absolute;
+}
+
+.tech-hero-tag,
+.tech-hero-title,
+.tech-hero-desc,
+.tech-hero-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.tech-hero-tag {
+  color: #7fd1ff;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  margin: 0;
+}
+
+.tech-hero-title {
+  color: #f2f6ff;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 10px 0 8px;
+}
+
+.tech-hero-desc {
+  color: #afc2eb;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 760px;
+}
+
+.tech-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech-btn {
+  border: 1px solid rgba(127, 209, 255, 0.45);
+  border-radius: 8px;
+  color: #d8e7ff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tech-btn:hover {
+  background: rgba(127, 209, 255, 0.15);
+  color: #ffffff;
+}
+
+.tech-btn-primary {
+  background: linear-gradient(90deg, #00c2ff 0%, #7b61ff 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.tech-btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+@media (max-width: 767px) {
+  .tech-hero {
+    padding: 20px 14px 16px;
+  }
+  .tech-hero-title {
+    font-size: 24px;
+  }
+}

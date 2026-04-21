@@ -3036,6 +3036,33 @@ header.header {
   margin: 0 0 14px;
 }
 
+.tech-page-hero {
+  background: linear-gradient(160deg, rgba(57, 76, 140, 0.22), rgba(16, 25, 48, 0.55));
+  border: 1px solid rgba(127, 209, 255, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(2, 8, 25, 0.42);
+  margin-bottom: 12px;
+  padding: 18px;
+}
+
+.tech-page-kicker {
+  color: #7fd1ff;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  margin: 0 0 6px;
+}
+
+.tech-page-hero h1 {
+  color: #f5f8ff;
+  font-size: 28px;
+  margin: 0;
+}
+
+.tech-page-hero p {
+  color: #afc2eb;
+  margin: 8px 0 0;
+}
+
 .tech-card-list {
   display: grid;
   gap: 12px;

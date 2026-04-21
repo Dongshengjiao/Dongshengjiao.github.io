@@ -3129,6 +3129,45 @@ header.header {
   color: #9bb2df;
 }
 
+.post.posts-expand .post-block {
+  border: 1px solid rgba(127, 209, 255, 0.16);
+  box-shadow: 0 16px 36px rgba(2, 8, 25, 0.48);
+}
+
+.post .post-header {
+  border-bottom: 1px solid rgba(127, 209, 255, 0.16);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+}
+
+.post .post-title {
+  font-size: 34px;
+  letter-spacing: 0.3px;
+}
+
+.post .post-body p,
+.post .post-body li {
+  line-height: 1.95;
+}
+
+.post .post-body h2 {
+  border-bottom: 1px solid rgba(127, 209, 255, 0.24);
+  color: #e9f2ff;
+  margin-top: 30px;
+}
+
+.post-toc-wrap .post-toc {
+  font-size: 13px;
+}
+
+.post-toc-wrap .nav .nav-link {
+  color: #a9c0ea;
+}
+
+.post-toc-wrap .nav .nav-link:hover {
+  color: #d5ecff;
+}
+
 @media (max-width: 991px) {
   .tech-card-list {
     grid-template-columns: 1fr;
